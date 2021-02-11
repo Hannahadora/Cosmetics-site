@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d2e0cde1e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="header fixed top-0 w-full z-10 px-24 py-2" style="background-color: rgb(235, 219, 214);">
+        <div class="flex items-center justify-between">
+            <p class="logo text-2xl text-red-700" style="font-family: script mt;">Adora's Haven</p>
+            
+            <div class="search h-14 w-1/2 flex items-center">
+                <i class="mr-5 fas fa-search"></i>
+                <input class="h-12 w-full text-sm placeholder-gray-600 focus:outline-none border-b border-gray-600" type="text" placeholder="Search"  style="background-color: rgb(235, 219, 214);">
+            </div>
+
+            <div class="font-serif flex flex flex-col items-center text-gray-500">
+                <p class="font-semibold">Hello!!! <i class="fas fa-sort-down text-2xl ml-12"></i></p>
+                <p><a class="hover:text-red-700" href="">Log In</a> Or <a class="hover:text-red-700" href="">Register</a></p>
+            </div>
+
+            <i class="fas fa-shopping-bag text-2xl"></i>
+        </div>    
+    </div>
+
+
+                <!--------------------MAIN--------------------->
+    <div class="mx-24 mt-24 h-full flex items-start justify-between">
+        <div class="sidenav w-1/4 rounded p-5 flex flex-col shadow-2xl">
+            <a class="px-7 py-3" href="">MakeUps</a>
+            <a class="px-7 py-3" href="">MakeOver Session</a>
+            <a class="px-7 py-3" href="">Body</a>
+            <a class="px-7 py-3" href="">Skin Care</a>
+            <a class="px-7 py-3" href="">PhotoShoot</a>
+            <a class="px-7 py-3" href="">Hairs</a>
+            <a class="px-7 py-3" href="">Perfume</a>
+            <a class="px-7 py-3" href="">Special</a>
+            <a class="px-7 py-3" href="">Gallery</a>
+            <a class="px-7 py-3" href="">Our Blog</a>
+        </div>
+
+        <div class="w-3/4 h-full shadow-2xl ml-5">
+            <div class="slideshow-container w-full h-full rounded">
+
+                <div class="mySlides fade w-full">
+                    <img class=" rounded" src=https://images.unsplash.com/photo-1542273086-ac11130c6126?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fGNvc21ldGljfGVufDB8MHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                    <div class="text">
+                     <button class="px-12 py-3 bg-red-700 text-white focus:outline-none">Shop Now</button>
+                    </div>
+                </div>
+                
+                <div class="mySlides fade w-full">
+                    <img class="rounded" src="https://images.pexels.com/photos/1161934/pexels-photo-1161934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                    <div class="text">
+                        <button class="px-12 py-3 bg-red-700 text-white focus:outline-none">Shop Now</button>
+                    </div>
+                </div>    
+
+                <div class="mySlides fade w-full">
+                    <img class=" rounded" src="https://images.pexels.com/photos/3618606/pexels-photo-3618606.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                    <div class="text">
+                        <button class="px-12 py-3 bg-red-700 text-white cursor-pointer focus:outline-none">Shop Now</button>
+                    </div>
+                </div>   
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>                    
+
+            </div><br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                               
+        </div>
+    </div>
+
+    
+        <h1 class="
+        text-center"><a class="px-7 py-3 border-b-4 text-gray-700 hover:text-red-700" href="">Trending Now</h1></a>
+
+    <div class="mx-24 my-14 flex items-center justify-between">
+        <div class="w-1/5 mr-7">
+            <img class="w-full" src="https://o.remove.bg/downloads/60f5c8b1-72c3-4390-ac12-d1dcf3b4e317/image-removebg-preview.png" alt="">
+            <div class="imgtext text-center">
+                <p class="font-semibold">Caramel topped pinking lips</p>
+                <p>$29.00</p>
+            </div>
+            <button class="px-12 py-3 bg-red-700 text-white cursor-pointer focus:outline-none">Add To Cart</button>
+        </div>
+
+        <div class="w-1/5 mr-7">
+            <img src="https://o.remove.bg/downloads/30f1bff6-2732-4113-89dc-28a96312a65c/image-removebg-preview.png" alt="">
+            <div class="imgtext text-center">
+                <p>Caramel topped pinking lips</p>
+                <p>$29.00</p>
+            </div>
+            <button class="px-12 py-3 bg-red-700 text-white cursor-pointer focus:outline-none">Add To Cart</button>
+        </div>
+
+        <div class="w-1/5 mr-7">
+            <img src="https://o.remove.bg/downloads/49a4c797-8ddb-4f19-bc22-bbcba0066222/image-removebg-preview.png" alt="">
+            <div class="imgtext text-center">
+                <p>Caramel topped pinking lips</p>
+                <p>$29.00</p>
+            </div>
+            <button class="px-12 py-3 bg-red-700 text-white cursor-pointer focus:outline-none">Add To Cart</button>
+        </div>
+
+        <div class="w-1/5 mr-7">
+            <img src="https://o.remove.bg/downloads/115b24a1-cc81-4743-8af4-d0af8f3dfc73/image-removebg-preview.png" alt="">
+            <div class="imgtext text-center">
+                <p>Caramel topped pinking lips</p>
+                <p>$29.00</p>
+            </div>
+            <button class="px-12 py-3 bg-red-700 text-white cursor-pointer focus:outline-none">Add To Cart</button>
+        </div>
+
+        <div class="w-1/5">
+            <img src="https://o.remove.bg/downloads/595ac4a7-2dbe-4e89-961a-7f0d58319b60/image-removebg-preview.png" alt="">
+            <div class="imgtext text-center">
+                <p>Caramel topped pinking lips</p>
+                <p>$29.00</p>
+            </div>
+            <button class="px-12 py-3 bg-red-700 text-white cursor-pointer focus:outline-none">Add To Cart</button>
+        </div>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+</body>
+</html>

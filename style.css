@@ -9,19 +9,19 @@ body{
 }
 
 p{
-    font-size:18px;
+    font-size:16px;
     font-family:open sans;
 }
 
 h1{
     font-family: playfair display;
-    font-size:30px;
+    font-size:28px;
 }
 
 .sidenav a{
     color: gray;
     font-family: open sans;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .sidenav a:hover{
@@ -32,7 +32,9 @@ h1{
     height: 530px;
 }
   
-
+.header.black{
+    background-color: black;
+}
 .butt a:hover{
   background-color: rgb(153, 47, 47);
 }

@@ -6,55 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d2e0cde1e0.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
     <title>About</title>
 </head>
 
-<style>
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-
-</style>
-
-
 <body>
-    <div class="header fixed top-0 w-full z-10 px-24 py-2" style="background-color: rgb(235, 219, 214);">
-        <div class="flex items-center justify-between">
-            <div class="dropdown relative block">
-                <i class="drop-btn fas fa-bars text-3xl"></i>
-
-                <div class="dropdown-content mt-5 z-20 rounded p-5 flex flex-col shadow-2xl absolute hidden">
-                    <a class="px-7 py-3" href="">MakeUps</a>
-                    <a class="px-7 py-3" href="">MakeOver Session</a>
-                    <a class="px-7 py-3" href="">Body</a>
-                    <a class="px-7 py-3" href="">Skin Care</a>
-                    <a class="px-7 py-3" href="">PhotoShoot</a>
-                    <a class="px-7 py-3" href="">Hairs</a>
-                    <a class="px-7 py-3" href="">Perfume</a>
-                    <a class="px-7 py-3" href="">Others</a>
-                    <a class="px-7 py-3" href="">Gallery</a>
-                    <a class="px-7 py-3" href="">Our Blog</a>
+    <div class="header fixed top-0 w-full z-10 bg-white lg:px-24 py-2 shadow-lg">
+        <div class="flex items-center lg:justify-between justify-center">
+            <div class="w-1/2 flex lg:flex-row flex-col items-start justify-between">
+                <p class="logo lg:mr-40 text-2xl text-red-700" style="font-family: script mt;">Adora's Haven</p>
+                
+                <div class="search h-14 lg:w-full flex items-center">
+                    <i class="lg:block hidden mr-2 fas fa-search"></i>
+                    <input class="h-12 w-full text-sm placeholder-gray-600 focus:outline-none border-b border-gray-600" type="text" placeholder="Search">
                 </div>
-
             </div>
-            <p class="logo text-2xl text-red-700" style="font-family: script mt;">Adora's Haven</p>
+
+
+            <div class="flex flex-row items-start lg:justify-between justify-center"></div>
+                <div class="mr-12">
+                    <i class="cursor-pointer fas fa-shopping-bag text-2xl"></i>
+                </div>    
+                
+                <div class="font-serif flex flex-col items-start text-gray-500">
+                    <p class="font-semibold">Hello!!! <i class="fas fa-sort-down text-2xl ml-2"></i></p>
+                    <p class="mt-2"><a class="px-5 py-1 bg-gray-400 rounded-full hover:text-red-700 hover:bg-gray-400" href="">Log In</a></p>
+                </div>
+            </div> 
+
             
-            <div class="search h-14 w-1/2 flex items-center">
-                <i class="mr-5 fas fa-search"></i>
-                <input class="h-12 w-full text-sm placeholder-gray-600 focus:outline-none border-b border-gray-600" type="text" placeholder="Search"  style="background-color: rgb(235, 219, 214);">
-            </div>
-
-            <div class="font-serif flex flex flex-col items-center text-gray-500">
-                <p class="font-semibold">Hello!!! <i class="fas fa-sort-down text-2xl ml-12"></i></p>
-                <p><a class="hover:text-red-700" href="">Log In</a> Or <a class="hover:text-red-700" href="">Register</a></p>
-            </div>
-
-            <i class="fas fa-shopping-bag text-2xl"></i>
         </div>    
     </div>
 
 
+                <!--------------------MAIN--------------------->
+    <div class="mt-24 px-24 w-full flex flex-col items-center justify-between">
+        <div class="sidenav bg-white w-full rounded flex items-center mb-2" data-aos="fade-down" data-aos-anchor-placement="down-up">
+            <a class="px-4 py-2" href="">MakeUps</a>
+            <a class="px-4 py-2" href="">MakeOver Session</a>
+            <a class="px-4 py-2" href="">Body</a>
+            <a class="px-4 py-2" href="">Skin Care</a>
+            <a class="px-4 py-2" href="">PhotoShoot</a>
+            <a class="px-4 py-2" href="">Hairs</a>
+            <a class="px-4 py-2" href="">Perfume</a>
+            <a class="px-4 py-2" href="">Others</a>
+            <a class="px-4 py-2" href="">Gallery</a>
+            <a class="px-4 py-2" href="">Our Blog</a>
+        </div>
+
+        <div class="cover mt-1 bg-center bg-cover bg-no-repeat w-full" data-aos="fade-down" data-aos-anchor-placement="down-up" style="background-image: url('https://images.unsplash.com/photo-1577195594933-f844fa36c37c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bGlwc3RpY2t8ZW58MHwwfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+            <div class="text lg:mx-24 my-12 text-center text-gray-700">
+                <h1 class="lg:text-5xl font-serif leading-10">Adora's Haven</h1>
+            </div>
+        </div> 
+    </div>
+
     
+    <h1 class="mt-10 text-center"><a class="px-7 py-1 border-b-4 text-gray-700 hover:text-red-700" href="">Our History</a></h1>
+
+    <p class="mx-24 my-4 text-center">Adora's Haven was founded in Commodi eveniet mollitia, at cum, temporibus expedita porro explicabo quaerat impedit atque fugit alias voluptatem doloremque fuga, eligendi cupiditate praesentium sequi dolorum labore laborum necessitatibus quia tempora? A facilis iusto voluptate ipsum esse excepturi beatae illum, quidem ipsam non veritatis recusandae ex?</p>
+
+
+    <h1 class="mt-10 text-center"><a class="px-7 py-1 border-b-4 text-gray-700 hover:text-red-700" href="">Meet Our Founder</a></h1>
+
+
+    <div class="mx-96 my-10 flex flex-col items-center justify-center gap-4">
+        <div class="w-full">
+            <img class="rounded-full w-72 h-72" src="https://images.unsplash.com/photo-1606752445013-eeb8cc06aabd?ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8N3wxMTA5OTU0Mnx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+
+        <div class="w-full">
+            <p class="font-bold text-2xl">Mme Adora</p>
+            <p class="text-lg font-semibold">A model and a biochemist</p>
+            <p class="text-base">Her passion for beauty Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi porro minima dolorum id quibusdam ut nulla maiores quod cum aperiam.</p>
+        </div>
+
+    </div>
+
+
+    <div class="mx-24 flex items-center justify-center">
+
+        <div class="flex flex-col border">
+            <h1>Our Vision Statement</h1>
+            <p>Our Vision is to Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, neque.</p>
+        </div>
+
+        <div class="flex flex-col border">
+            <h1>Our Mission  Statement</h1>
+            <p>Our Vision is to Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, neque.</p>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init({
+                offset:400,
+                duration:1500
+            });
+        </script>
 </body>
 </html>

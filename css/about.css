@@ -31,3 +31,15 @@ h1{
 .cover{
     height: 200px;
 }
+
+.butt a:hover{
+    background-color: rgb(153, 47, 47);
+  }
+
+  .socials a:hover{
+    color: rgb(153, 47, 47);
+}
+
+.footerlinks a:hover{
+    border-bottom: 2px solid rgb(224, 86, 86);
+}

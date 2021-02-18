@@ -18,13 +18,13 @@ h1{
     font-size:28px;
 }
 
-.sidenav a{
+a{
     color: gray;
     font-family: open sans;
     font-size: 18px;
 }
 
-.sidenav a:hover{
+.aside a:hover{
     border-bottom: 2px solid rgb(224, 86, 86);
 }
 
@@ -87,6 +87,20 @@ h1{
     transform: translateY(-10px);
 }
 
+
+.sidenav {
+    width: 0;
+    transition: 0.5s;
+  }
+  
+  .sidenav a {
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: rgb(153, 47, 47);
+  }
 
 
 

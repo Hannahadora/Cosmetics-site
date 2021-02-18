@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d2e0cde1e0.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <title>Login Page</title>
+</head>
+<body>
+
+    <div class="header fixed top-0 w-full z-10 bg-white lg:px-24 md:px-10 px-5 py-2 shadow-lg">
+        <div class="flex items-center justify-between">
+            
+            <div class="lg:w-1/2 w-10/12 flex flex-row lg:items-start items-center justify-between">
+                <p class="logo lg:mr-40 mr-10 text-xl text-red-700" style="font-family: avenir;"><a class="cursor-pointer" href="index.html">Adora's <br/>Haven</a></p>
+                
+                <div class="search h-14 w-full flex items-center">
+                    <i class="lg:block hidden mr-2 fas fa-search"></i>
+                    <input class="h-12 w-full text-sm placeholder-gray-600 focus:outline-none border-b border-gray-600" type="text" placeholder="Search">
+                </div>
+            </div>
+
+
+            <div class="flex flex-row items-start justify-between"></div>
+                <div class="lg:block hidden mr-12">
+                    <i class="cursor-pointer fas fa-shopping-bag text-2xl"></i>
+                </div>    
+                
+                <div class="font-serif lg:flex hidden flex-col items-start text-gray-500">
+                    <p class="font-semibold">Hello!!! <i class="fas fa-sort-down text-2xl ml-2"></i></p>
+                    <p class="mt-2"><a class="my-3 text-gray-700 px-7 py-2 border border-red-500 rounded text-base font-medium hover:bg-red-200" href="">Log In</a></p>
+                </div>
+
+
+                <div id="mySidenav" class="sidenav overflow-x-hidden fixed pt-14 z-10 top-0 left-0 h-full" style="background-color: rgb(235, 219, 214);">
+                    <a href="javascript:void(0)" class="closebtn absolute top-4 right-6 ml-12" onclick="closeNav()">
+                        <i class="fas fa-times text-2xl"></i>
+                    </a>
+                    <a class="px-4 py-2" href="">My Account</a>
+                    <a class="px-4 py-2" href="">Cart</a>
+                    <a class="px-4 py-2" href="">MakeUps</a>
+                    <a class="px-4 py-2" href="">MakeOver Session</a>
+                    <a class="px-4 py-2" href="">Body</a>
+                    <a class="px-4 py-2" href="">Skin Care</a>
+                    <a class="px-4 py-2" href="">PhotoShoot</a>
+                    <a class="px-4 py-2" href="">Hairs</a>
+                    <a class="px-4 py-2" href="">Perfume</a>
+                    <a class="px-4 py-2" href="">Others</a>
+                    <a class="px-4 py-2" href="">Gallery</a>
+                    <a class="px-4 py-2" href="">Our Blog</a>
+                    <a class="px-4 py-2" href="">Login</a>
+                </div>
+    
+                <button class="lg:hidden block" style="font-size:30px;cursor:pointer;" onclick="openNav()">
+                    <i class="fas fa-bars text-2xl"></i> 
+                </button>
+            </div>   
+        </div>    
+    </div>
+
+    <div class="aside mt-24 bg-white w-full rounded lg:flex hidden items-center justify-center mb-2" data-aos="fade-down" data-aos-anchor-placement="down-up">
+        <a class="px-4 py-2" href="">MakeUps</a>
+        <a class="px-4 py-2" href="">MakeOver Session</a>
+        <a class="px-4 py-2" href="">Body</a>
+        <a class="px-4 py-2" href="">Skin Care</a>
+        <a class="px-4 py-2" href="">PhotoShoot</a>
+        <a class="px-4 py-2" href="">Hairs</a>
+        <a class="px-4 py-2" href="">Perfume</a>
+        <a class="px-4 py-2" href="">Others</a>
+        <a class="px-4 py-2" href="">Gallery</a>
+        <a class="px-4 py-2" href="">Our Blog</a>
+    </div>
+
+
+
+    <!------------------------------------MAIN bOARD--------------->
+
+    <div class="lg:mt-7 mt-28 mx-auto w-10/12 h-full lg:px-40 md:px-24 px-7 py-10" style="background-color: rgb(235, 219, 214);" data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
+        <h1 class="text-center">Welcome!!! <i class="fas fa-heart text-red-700"></i></h1>
+        <form class="mt-7 text-gray-700" action="" style="font-family: open sans;">
+            <label class="mx-1 text-base font-medium" for="name"><i class="fas fa-user text-sm px-2"></i></i>Username</label><br/>
+            <input class="w-full h-12 border border-current rounded px-2 placeholder-gray-500" type="name" placeholder="Username" style="background-color: rgb(235, 219, 214);"><br/><br/>
+
+            <label class="mx-1 text-base font-medium" for="name"><i class="fas fa-lock text-sm px-2"></i></i>Password</label><br/>
+            <input class="w-full h-12 border border-current rounded px-2 placeholder-gray-500" type="password" placeholder="Password" style="background-color: rgb(235, 219, 214);">
+        </form>
+        <div class="flex sm:flex-row flex-col items-center justify-between" style="font-family: opens sans;">
+            <form class="text-gray-700" action="" >
+                <input id="agreement" type="checkbox" style="background-color: rgb(235, 219, 214);">
+                <label for="agreement">I agree with the <span><a class="text-sm text-blue-700 cursor-pointer">Privacy policy</a></span></label>
+            </form>
+            <a class="text-sm text-blue-700" href="">Forgot Password</a>
+        </div>
+        <div class="text-center">
+            <button class="butt my-7 cursor-pointer focus:outline-none"><a href="" class="font-medium lg:text-base text-sm lg:px-12 px-5 lg:py-3 py-2 bg-red-400 text-white rounded ">Continue</a></button>
+        </div>
+            <p class="sm:text-center">Dont have an account? <span><a class="mx-2 text-gray-700 sm:px-7 px-3 sm:py-3 py-1 border border-red-500 rounded sm:text-base text-sm font-medium hover:bg-red-200" href="signup.html">Sign Up</a></span></p>
+       
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init({
+                offset:400,
+                duration:1500
+            });
+        </script>
+</body>
+</html>

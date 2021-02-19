@@ -32,7 +32,7 @@
                 
                 <div class="font-serif lg:flex hidden flex-col items-start text-gray-500">
                     <p class="font-semibold">Hello!!! <i class="fas fa-sort-down text-2xl ml-2"></i></p>
-                    <p class="mt-2"><a class="my-3 text-gray-700 px-7 py-2 border border-red-500 rounded text-base font-medium hover:bg-red-200" href="">Log In</a></p>
+                    <p class="mt-2"><a class="my-3 text-gray-700 px-7 py-2 border border-red-500 rounded text-base font-medium hover:bg-red-200" href="login.html">Log In</a></p>
                 </div>
 
 
@@ -52,7 +52,7 @@
                     <a class="px-4 py-2" href="">Others</a>
                     <a class="px-4 py-2" href="">Gallery</a>
                     <a class="px-4 py-2" href="">Our Blog</a>
-                    <a class="px-4 py-2" href="">Login</a>
+                    <a class="px-4 py-2" href="login.html">Login</a>
                 </div>
     
                 <button class="lg:hidden block" style="font-size:30px;cursor:pointer;" onclick="openNav()">
@@ -79,28 +79,30 @@
 
     <!------------------------------------MAIN bOARD--------------->
 
-    <div class="lg:mt-7 mt-28 mx-auto w-10/12 h-full lg:px-40 md:px-24 px-7 py-10" style="background-color: rgb(235, 219, 214);" data-aos="flip-left"
+    <div class="lg:mt-7 mt-28 mb-5 mx-auto w-10/12 h-full lg:px-40 md:px-24 px-7 py-10" style="background-color: rgb(235, 219, 214);" data-aos="flip-left"
     data-aos-easing="ease-out-cubic"
     data-aos-duration="2000">
         <h1 class="text-center">Welcome!!! <i class="fas fa-heart text-red-700"></i></h1>
         <form class="mt-7 text-gray-700" action="" style="font-family: open sans;">
-            <label class="mx-1 text-base font-medium" for="name"><i class="fas fa-user text-sm px-2"></i></i>Username</label><br/>
+            <label class="text-base font-medium" for="name"><i class="fas fa-user text-sm px-2"></i></i>Username</label><br/>
             <input class="w-full h-12 border border-current rounded px-2 placeholder-gray-500" type="name" placeholder="Username" style="background-color: rgb(235, 219, 214);"><br/><br/>
 
-            <label class="mx-1 text-base font-medium" for="name"><i class="fas fa-lock text-sm px-2"></i></i>Password</label><br/>
-            <input class="w-full h-12 border border-current rounded px-2 placeholder-gray-500" type="password" placeholder="Password" style="background-color: rgb(235, 219, 214);">
+            <label class="text-base font-medium" for="name"><i class="fas fa-lock text-sm px-2"></i></i>Password</label><br/>
+            <input class="w-full h-12 border border-current rounded px-2 placeholder-gray-500" type="password" placeholder="Password" style="background-color: rgb(235, 219, 214);"><br/><br/>
+        
+            <label class="text-base font-medium" for="name"><i class="fas fa-lock text-sm px-2"></i></i>Confirm Password</label><br/>
+            <input class="w-full h-12 border border-current rounded px-2 placeholder-gray-500" type="password" placeholder="Confirm Password" style="background-color: rgb(235, 219, 214);">  
         </form>
-        <div class="flex sm:flex-row flex-col items-center justify-between" style="font-family: opens sans;">
+
             <form class="text-gray-700" action="" >
                 <input id="agreement" type="checkbox" style="background-color: rgb(235, 219, 214);">
                 <label for="agreement">I agree with the <span><a class="text-sm text-blue-700 cursor-pointer">Privacy policy</a></span></label>
             </form>
-            <a class="text-sm text-blue-700" href="">Forgot Password</a>
-        </div>
+
         <div class="text-center">
-            <button class="butt my-7 cursor-pointer focus:outline-none"><a href="" class="font-medium lg:text-base text-sm lg:px-12 px-5 lg:py-3 py-2 bg-red-400 text-white rounded ">Continue</a></button>
+            <button class="butt my-5 cursor-pointer focus:outline-none"><a href="" class="font-medium lg:text-base text-sm lg:px-12 px-5 lg:py-3 py-2 bg-red-400 text-white rounded ">Continue</a></button>
         </div>
-            <p class="sm:text-center">Already have an account? <span><a class="mx-2 text-gray-700 sm:px-7 px-3 sm:py-3 py-1 border border-red-500 rounded sm:text-base text-sm font-medium hover:bg-red-200" href="">Log In</a></span></p>
+            <p class="mt-5 sm:text-center">Already have an account? <span><a class="mx-2 text-gray-700 sm:px-7 px-3 sm:py-3 py-1 border border-red-500 rounded sm:text-base text-sm font-medium hover:bg-red-200" href="login.html">Log In</a></span></p>
        
     </div>
 

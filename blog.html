@@ -7,11 +7,11 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d2e0cde1e0.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/login.css">
-    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="css/blog.css">
+    <title>Blog</title>
 </head>
 <body>
-
+    
     <div class="header fixed top-0 w-full z-10 bg-white lg:px-24 md:px-10 px-5 py-2 shadow-lg">
         <div class="flex items-center justify-between">
             
@@ -36,7 +36,7 @@
                 </div>
 
 
-                <div id="mySidenav" class="sidenav overflow-x-hidden fixed pt-14 z-10 top-0 left-0 h-full" style="background-color: rgb(235, 219, 214);">
+                <div id="mySidenav" class="sidenav overflow-x-hidden fixed pt-14 z-30 top-0 left-0 h-full" style="background-color: rgb(235, 219, 214);">
                     <a href="javascript:void(0)" class="closebtn absolute top-4 right-6 ml-12" onclick="closeNav()">
                         <i class="fas fa-times text-2xl"></i>
                     </a>
@@ -62,42 +62,51 @@
         </div>    
     </div>
 
-    <div class="aside mt-24 bg-white w-full rounded lg:flex hidden items-center justify-center mb-2" data-aos="fade-down" data-aos-anchor-placement="down-up">
-        <a class="px-4 py-2" href="">MakeUps</a>
-        <a class="px-4 py-2" href="">MakeOver Session</a>
-        <a class="px-4 py-2" href="">Body</a>
-        <a class="px-4 py-2" href="">Skin Care</a>
-        <a class="px-4 py-2" href="">PhotoShoot</a>
-        <a class="px-4 py-2" href="">Hairs</a>
-        <a class="px-4 py-2" href="">Perfume</a>
-        <a class="px-4 py-2" href="">Others</a>
-        <a class="px-4 py-2" href="">Gallery</a>
-        <a class="px-4 py-2" href="">Our Blog</a>
+
+   
+      <!--------------------MAIN--------------------->
+      <div class="mt-24 lg:px-24 md:px-10 px-5 w-full flex flex-col items-center justify-between">
+        <div class="aside bg-white w-full rounded lg:flex hidden items-center justify-center mb-2" data-aos="fade-down" data-aos-anchor-placement="down-up">
+            <a class="px-4 py-2" href="">MakeUps</a>
+            <a class="px-4 py-2" href="">MakeOver Session</a>
+            <a class="px-4 py-2" href="">Body</a>
+            <a class="px-4 py-2" href="">Skin Care</a>
+            <a class="px-4 py-2" href="">PhotoShoot</a>
+            <a class="px-4 py-2" href="">Hairs</a>
+            <a class="px-4 py-2" href="">Perfume</a>
+            <a class="px-4 py-2" href="">Others</a>
+            <a class="px-4 py-2" href="">Gallery</a>
+            <a class="px-4 py-2" href="blog.html">Our Blog</a>
+        </div>
+
+        <div class="cover mt-1 bg-center bg-cover bg-no-repeat w-full" data-aos="fade-down" data-aos-anchor-placement="down-up" style="background-image: url('https://images.unsplash.com/photo-1577195594933-f844fa36c37c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bGlwc3RpY2t8ZW58MHwwfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+            <div class="text lg:mx-24 my-24 text-center text-gray-700">
+                <h1 class="lg:text-5xl font-serif leading-10">Our Blog</h1>
+            </div>
+        </div> 
+    </div>
+
+    <div class="mx-24 my-12">
+
+        <div class="bloghead flex items-center justify-center gap-5">
+            <h1 class="text-center my-12"><a class="px-7 py-3 border-b-4 text-gray-700 hover:text-red-700" href="">New Posts</a></h1>
+            <h1 class="text-center my-12"><a class="px-7 py-3 border-b-4 text-gray-700 hover:text-red-700" href="">Trending posts</a></h1>
+        </div>
     </div>
 
 
 
-    <!------------------------------------MAIN bOARD--------------->
 
-    <div class="lg:mt-7 mt-28 mb-5 mx-auto w-10/12 h-full lg:px-40 md:px-24 px-7 py-10" style="background-color: rgb(235, 219, 214);" data-aos="flip-left"
-    data-aos-easing="ease-out-cubic"
-    data-aos-duration="2000">
-        <h1 class="text-center">Welcome!!! <i class="fas fa-heart text-red-700"></i></h1>
-        <form class="mt-7 text-gray-700" action="" style="font-family: open sans;">
-            <label class="text-base font-medium" for="name"><i class="fas fa-user text-sm px-2"></i></i>Username</label><br/>
-            <input class="w-full h-12 border border-current rounded px-2 placeholder-gray-500" type="name" placeholder="Username" style="background-color: rgb(235, 219, 214);"><br/><br/>
 
-            <label class="text-base font-medium" for="name"><i class="fas fa-lock text-sm px-2"></i></i>Password</label><br/>
-            <input class="w-full h-12 border border-current rounded px-2 placeholder-gray-500" type="password" placeholder="Password" style="background-color: rgb(235, 219, 214);">
-        </form>
-        <div class="" style="font-family: opens sans;">
-            <a class="text-sm text-blue-700" href="">Forgot Password</a>
-        </div>
-        <div class="text-center">
-            <button class="butt my-7 cursor-pointer focus:outline-none"><a href="" class="font-medium lg:text-base text-sm lg:px-12 px-5 lg:py-3 py-2 bg-red-400 text-white rounded ">Continue</a></button>
-        </div>
-            <p class="mt-5 sm:text-center">Dont have an account? <span><a class="mx-2 text-gray-700 sm:px-7 px-3 sm:py-3 py-1 border border-red-500 rounded sm:text-base text-sm font-medium hover:bg-red-200" href="signup.html">Sign Up</a></span></p>
-    </div>
+
+
+
+
+
+
+
+
+
 
 
 

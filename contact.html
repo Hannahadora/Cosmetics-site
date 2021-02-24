@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d2e0cde1e0.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <title>About</title>
+</head>
+
+<body>
+    <div class="header fixed top-0 w-full z-10 bg-white lg:px-24 md:px-10 px-5 py-2 shadow-lg">
+        <div class="flex items-center justify-between">
+            
+            <div class="lg:w-1/2 w-10/12 flex flex-row lg:items-start items-center justify-between">
+                <p class="logo lg:mr-40 mr-10 text-xl text-red-700" style="font-family: avenir;"><a class="cursor-pointer" href="index.html">Adora's <br/>Haven</a></p>
+                
+                <div class="search h-14 w-full flex items-center">
+                    <i class="lg:block hidden mr-2 fas fa-search"></i>
+                    <input class="h-12 w-full text-sm placeholder-gray-600 focus:outline-none border-b border-gray-600" type="text" placeholder="Search">
+                </div>
+            </div>
+
+
+            <div class="flex flex-row items-start justify-between"></div>
+                <div class="lg:block hidden mr-12">
+                    <i class="cursor-pointer fas fa-shopping-bag text-2xl"></i>
+                </div>    
+                
+                <div class="font-serif lg:flex hidden flex-col items-start text-gray-500">
+                    <p class="font-semibold">Hello!!! <i class="fas fa-sort-down text-2xl ml-2"></i></p>
+                    <p class="mt-2"><a class="my-3 text-gray-700 px-7 py-2 border border-red-500 rounded text-base font-medium hover:bg-red-200" href="login.html">Log In</a></p>
+                </div>
+
+
+                <div id="mySidenav" class="sidenav overflow-x-hidden fixed pt-14 z-10 top-0 left-0 h-full" style="background-color: rgb(235, 219, 214);">
+                    <a href="javascript:void(0)" class="closebtn absolute top-4 right-6 ml-12" onclick="closeNav()">
+                        <i class="fas fa-times text-2xl"></i>
+                    </a>
+                    <a class="px-4 py-2" href="">My Account</a>
+                    <a class="px-4 py-2" href="">Cart</a>
+                    <a class="px-4 py-2" href="">MakeUps</a>
+                    <a class="px-4 py-2" href="">MakeOver Session</a>
+                    <a class="px-4 py-2" href="">Body</a>
+                    <a class="px-4 py-2" href="">Skin Care</a>
+                    <a class="px-4 py-2" href="">PhotoShoot</a>
+                    <a class="px-4 py-2" href="">Hairs</a>
+                    <a class="px-4 py-2" href="">Perfume</a>
+                    <a class="px-4 py-2" href="">Others</a>
+                    <a class="px-4 py-2" href="">Gallery</a>
+                    <a class="px-4 py-2" href="">Our Blog</a>
+                    <a class="px-4 py-2" href="login.html">Login</a>
+                </div>
+    
+                <button class="lg:hidden block" style="font-size:30px;cursor:pointer;" onclick="openNav()">
+                    <i class="fas fa-bars text-2xl"></i> 
+                </button>
+            </div> 
+    
+        </div>    
+    </div>
+
+
+
+
+    
+</body>
+</html>

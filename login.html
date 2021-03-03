@@ -9,6 +9,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/login.css">
     <title>Login Page</title>
+    <link rel="icon" href="/Images/hanna.ico">
 </head>
 <body>
 
@@ -23,7 +24,7 @@
                     <input class="h-12 w-full text-sm placeholder-gray-600 focus:outline-none border-b border-gray-600" type="text" placeholder="Search">
                 </div>
             </div>
-
+0
 
             <div class="flex flex-row items-start justify-between"></div>
                 <div class="lg:block hidden mr-12">
@@ -83,12 +84,12 @@
     data-aos-easing="ease-out-cubic"
     data-aos-duration="2000">
         <h1 class="text-center">Welcome!!! <i class="fas fa-heart text-red-700"></i></h1>
-        <form class="mt-7 text-gray-700" action="" style="font-family: open sans;">
+        <form action="/action_page.php" method="post" class="mt-7 text-gray-700" style="font-family: open sans;">
             <label class="text-base font-medium" for="name"><i class="fas fa-user text-sm px-2"></i></i>Username</label><br/>
-            <input class="w-full h-12 border border-current rounded px-2 placeholder-gray-500" type="name" placeholder="Username" style="background-color: rgb(235, 219, 214);"><br/><br/>
+            <input class="w-full h-12 border border-current rounded px-2 placeholder-gray-500" type="name" placeholder="Username" required style="background-color: rgb(235, 219, 214);"><br/><br/>
 
             <label class="text-base font-medium" for="name"><i class="fas fa-lock text-sm px-2"></i></i>Password</label><br/>
-            <input class="w-full h-12 border border-current rounded px-2 placeholder-gray-500" type="password" placeholder="Password" style="background-color: rgb(235, 219, 214);">
+            <input class="w-full h-12 border border-current rounded px-2 placeholder-gray-500" type="password" placeholder="Password" required style="background-color: rgb(235, 219, 214);">
         </form>
         <div class="" style="font-family: opens sans;">
             <a class="text-sm text-blue-700" href="">Forgot Password</a>

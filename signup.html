@@ -82,26 +82,61 @@
     <div class="lg:mt-7 mt-28 mb-5 mx-auto w-10/12 h-full lg:px-40 md:px-24 px-7 py-10" style="background-color: rgb(235, 219, 214);" data-aos="flip-left"
     data-aos-easing="ease-out-cubic"
     data-aos-duration="2000">
-        <h1 class="text-center">Welcome!!! <i class="fas fa-heart text-red-700"></i></h1>
-        <form class="mt-7 text-gray-700" action="" style="font-family: open sans;">
-            <label class="text-base font-medium" for="name"><i class="fas fa-user text-sm px-2"></i></i>Username</label><br/>
-            <input class="w-full h-12 border border-current rounded px-2 placeholder-gray-500" type="name" placeholder="Username" style="background-color: rgb(235, 219, 214);"><br/><br/>
 
-            <label class="text-base font-medium" for="name"><i class="fas fa-lock text-sm px-2"></i></i>Password</label><br/>
-            <input class="w-full h-12 border border-current rounded px-2 placeholder-gray-500" type="password" placeholder="Password" style="background-color: rgb(235, 219, 214);"><br/><br/>
+        <h1 class="text-center">Welcome!!! <i class="fas fa-heart text-red-700"></i></h1>
+
+
+
+        <form action="" id="register" class="mt-7 text-gray-700" action="" style="font-family: open sans;">
+
+            <div class="input-group">
+                <label class="text-base font-medium" for="name"><i class="fas fa-envelope text-sm px-2"></i></i>Email</label><br/>
+                <input id="email" name="email" type="text" class="w-full h-12 border border-current rounded px-2 placeholder-gray-500" placeholder="Email" required style="background-color: rgb(235, 219, 214);"><br/><br/>
+            </div>
+
+
+            <div class="w-full flex md:flex-row flex-col items-center justify-between gap-2">
+                <div class="input-group md:w-1/2 w-full">
+                    <label class="text-base font-medium" for="name"><i class="fas fa-lock text-sm px-2"></i>Password</label><br/>
+                    <div class="flex items-center justify-between">
+                        <input id="password" name="password" type="password" class="w-full h-12 border border-current rounded px-2 placeholder-gray-500" placeholder="Password" required style="background-color: rgb(235, 219, 214);">
+                        <i class="far fa-eye cursor-pointer -ml-7 text-gray-500" id="togglePassword"></i>
+                    </div>
+                </div>
+
+                <div class="input-group md:w-1/2 w-full">
+                    <label class="text-base font-medium" for="name"><i class="fas fa-lock text-sm px-2"></i></i>Confirm Password</label><br/>
+                    <div class="flex items-center justify-between">
+                        <input id="confirmPassword" name="confirmPassword" type="password" class="w-full h-12 border border-current rounded px-2 placeholder-gray-500" placeholder="Confirm Password" required style="background-color: rgb(235, 219, 214);">  
+                        <i class="far fa-eye cursor-pointer -ml-7 text-gray-500" id="toggleConfirmPassword"></i>
+                    </div>
+                </div>
+            </div>            
         
-            <label class="text-base font-medium" for="name"><i class="fas fa-lock text-sm px-2"></i></i>Confirm Password</label><br/>
-            <input class="w-full h-12 border border-current rounded px-2 placeholder-gray-500" type="password" placeholder="Confirm Password" style="background-color: rgb(235, 219, 214);">  
+            <span class="text-sm text-blue-500">(Password must be Minimum 8 characters, at least 1 uppercase letter, 1 lowercase letter and 1 number)</span>
+            
+            <div class="input-group text-center">
+                <a href="account.html.html" class=""><input type="submit" value="Continue" class="submit-btn butt my-5 cursor-pointer focus:outline-none font-medium lg:text-base text-sm lg:px-12 px-5 lg:py-3 py-2 bg-red-400 text-white rounded "></a>
+                <!-- <button class="butt my-5 cursor-pointer focus:outline-none"><a href="" class="font-medium lg:text-base text-sm lg:px-12 px-5 lg:py-3 py-2 bg-red-400 text-white rounded ">Continue</a></button> -->
+                <div class="clear"></div>
+            </div>
+       
+            <div class="errors overflow-y-hidden h-5 text-red-700">
+            </div>
+            
         </form>
+
+
+
+
+
 
             <form class="text-gray-700" action="" >
                 <input id="agreement" type="checkbox" style="background-color: rgb(235, 219, 214);">
                 <label for="agreement">I agree with the <span><a class="text-sm text-blue-700 cursor-pointer">Privacy policy</a></span></label>
             </form>
 
-        <div class="text-center">
-            <button class="butt my-5 cursor-pointer focus:outline-none"><a href="" class="font-medium lg:text-base text-sm lg:px-12 px-5 lg:py-3 py-2 bg-red-400 text-white rounded ">Continue</a></button>
-        </div>
+        
             <p class="mt-5 sm:text-center">Already have an account? <span><a class="mx-2 text-gray-700 sm:px-7 px-3 sm:py-3 py-1 border border-red-500 rounded sm:text-base text-sm font-medium hover:bg-red-200" href="login.html">Log In</a></span></p>
        
     </div>
@@ -122,6 +157,126 @@
         function closeNav() {
           document.getElementById("mySidenav").style.width = "0";
         }
+
+
+
+
+        const regForm = document.querySelector('form#register');
+        const errors_el = document.querySelector('form#register .errors');
+
+        regForm.addEventListener('submit', validateRegisterForm);
+
+        function validateRegisterForm (e) {
+        e.preventDefault();
+        
+        // const firstname = document.querySelector('#register #firstname');
+        // const surname = document.querySelector('#register #surname');
+        const email = document.querySelector('#register #email');
+        const password = document.querySelector('#register #password');
+        const confirmPassword = document.querySelector('#register #confirmPassword');
+        
+        let errors = [];
+        
+        const email_reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const pass_reg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+        
+        // if (firstname.value == "") {
+        // errors.push({text: "first name", el: firstname});
+        // }
+        
+        // if (surname.value == "") {
+        // errors.push({text: "surname", el: surname});
+        // }
+        
+        if (email.value == "") {
+        errors.push({text: "email", el: email});
+        } else if (!email_reg.test(email.value)) {
+        errors.push({text: "email", el: email});
+        }
+        
+        if (password.value == "") {
+        errors.push({text: "password", el: password});
+        } else if (password.length < 8) {
+        errors.push({text: "password too short", el: password});
+        } else if (!pass_reg.test(password.value)) {
+        errors.push({text: "password", el: password});
+        }
+
+        if (confirmPassword.value == "") {
+        errors.push({text: "password", el: confirmPassword});
+        } else if (confirmPassword.length < 8) {
+        errors.push({text: "password too short", el: confirmPassword});
+        } else if (!pass_reg.test(confirmPassword.value)) {
+        errors.push({text: "password", el: confirmPassword});
+        } else if (confirmPassword.value != password.value) {
+        errors.push({text: "password does not match", el: confirmPassword});
+        }
+        
+        
+        if (errors.length > 0) {
+        handle_errors(errors);
+        return false;
+        }
+        
+        window.location = "account.html";;
+        return true;
+        }
+
+        function handle_errors(errs) {
+        let str = "You have errors with the following field(s); ";
+        
+        errs.map((er) => {
+        er.el.classList.add('error');
+        str += er.text + ", ";
+        });
+        
+        errs[0].el.focus();
+        
+        let error_el = document.createElement('div');
+        error_el.classList.add('error');
+        error_el.innerText = str;
+        
+        error_el.addEventListener('click', function () {
+        errors_el.removeChild(error_el);
+        });
+        
+        errors_el.appendChild(error_el);
+        }
+
+
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+
+        togglePassword.addEventListener('click', function (e) {
+        // toggle the type attribute
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        // toggle the eye slash icon
+        this.classList.toggle('fa-eye-slash');
+        });
+
+        const toggleConfirmPassword = document.querySelector('#toggleConfirmPassword');
+        const confirmPassword = document.querySelector('#confirmPassword');
+
+        toggleConfirmPassword.addEventListener('click', function (e) {
+        // toggle the type attribute
+        const type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+        confirmPassword.setAttribute('type', type);
+        // toggle the eye slash icon
+        this.classList.toggle('fa-eye-slash');
+        });
+
+
+
+
+
+
+
+
+
+
+
+
     </script>
 
 

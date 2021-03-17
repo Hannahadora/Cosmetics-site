@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d2e0cde1e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <link rel="icon" href="/Images/hanna.ico">
+</head>
+<body class="" style="background-color: rgb(235, 219, 214);">
+    <div class="header fixed top-0 w-full z-10 bg-white lg:px-24 md:px-10 px-5 py-2 shadow-lg">
+        <div class="flex items-center justify-between">
+            
+            <div class="lg:w-1/2 w-10/12 flex flex-row lg:items-start items-center justify-between">
+                <p class="logo lg:mr-40 mr-10 text-xl text-red-700" style="font-family: avenir;"><a class="cursor-pointer" href="index.html">Adora's <br/>Haven</a></p>
+                
+                <div class="search h-14 w-full flex items-center">
+                    <i class="lg:block hidden mr-2 fas fa-search"></i>
+                    <input class="h-12 w-full text-sm placeholder-gray-600 focus:outline-none border-b border-gray-600" type="text" placeholder="Search">
+                </div>
+            </div>
+
+
+            <div class="flex flex-row items-start justify-between"></div>
+                <div class="lg:block hidden mr-12">
+                    <i class="cursor-pointer fas fa-shopping-bag text-2xl"></i>
+                </div>    
+                
+                <div class="font-serif lg:flex hidden flex-col items-start text-gray-500">
+                    <p class="font-semibold">Hello!!! <i class="fas fa-sort-down text-2xl ml-2"></i></p>
+                    <p class="mt-2"><a class="my-3 text-gray-700 px-7 py-2 border border-red-500 rounded text-base font-medium hover:bg-red-200" href="login.html">Log In</a></p>
+                </div>
+
+
+                <div id="mySidenav" class="sidenav overflow-x-hidden fixed pt-14 z-10 top-0 left-0 h-full" style="background-color: rgb(235, 219, 214);">
+                    <a href="javascript:void(0)" class="closebtn absolute top-4 right-6 ml-12" onclick="closeNav()">
+                        <i class="fas fa-times text-2xl"></i>
+                    </a>
+                    <a class="px-4 py-2" href="">My Account</a>
+                    <a class="px-4 py-2" href="">Cart</a>
+                    <a class="px-4 py-2" href="">MakeUps</a>
+                    <a class="px-4 py-2" href="">MakeOver Session</a>
+                    <a class="px-4 py-2" href="">Body</a>
+                    <a class="px-4 py-2" href="">Skin Care</a>
+                    <a class="px-4 py-2" href="">PhotoShoot</a>
+                    <a class="px-4 py-2" href="">Hairs</a>
+                    <a class="px-4 py-2" href="">Perfume</a>
+                    <a class="px-4 py-2" href="">Others</a>
+                    <a class="px-4 py-2" href="">Gallery</a>
+                    <a class="px-4 py-2" href="">Our Blog</a>
+                    <a class="px-4 py-2" href="login.html">Login</a>
+                </div>
+    
+                <button class="lg:hidden block" style="font-size:30px;cursor:pointer;" onclick="openNav()">
+                    <i class="fas fa-bars text-2xl"></i> 
+                </button>
+            </div> 
+
+            
+        </div>    
+    </div>
+
+    <div class="mt-24 aside w-full rounded lg:flex hidden items-center justify-center mb-2" data-aos="fade-down" data-aos-anchor-placement="down-up">
+        <a class="px-4 py-2" href="">MakeUps</a>
+        <a class="px-4 py-2" href="">MakeOver Session</a>
+        <a class="px-4 py-2" href="">Body</a>
+        <a class="px-4 py-2" href="">Skin Care</a>
+        <a class="px-4 py-2" href="">PhotoShoot</a>
+        <a class="px-4 py-2" href="">Hairs</a>
+        <a class="px-4 py-2" href="">Perfume</a>
+        <a class="px-4 py-2" href="">Others</a>
+        <a class="px-4 py-2" href="">Gallery</a>
+        <a class="px-4 py-2" href="blog.html">Our Blog</a>
+    </div>
+
+
+    <div class="sideAcc mt-7 flex items-start gap-4 lg:mx-24 md:mx-10 mx-5">
+        <div class="w-1/5 relative fixed z-10 flex flex-col justify-start bg-white pb-4 rounded">
+            <h2 class="text-xl font-serif rounded-t bg-red-500 text-white font-medium px-5 py-3">My Account</h2>
+            <a class="px-5 py-4" style="background-color: rgb(235, 219, 214);" href=""><i class="fas fa-user mr-2"></i>Profile</a></p>
+            <a class="px-5 py-4" href=""><i class="fas fa-suitcase mr-2"></i>Orders</a></p>
+            <a class="px-5 py-4" href=""><i class="fas fa-heart mr-2"></i>My Offers</a></p>
+            <a class="px-5 py-4" href=""><i class="fas fa-question mr-2"></i>Help</a></p>
+            <a class="px-5 py-4"href=""><i class="fas fa-lock mr-2"></i>Change Password</a></p>
+            <a class="px-5 py-4" href=""><i class="fas fa-sign-out-alt mr-2"></i>Log Out</a></p>
+        </div>
+
+        <div class="w-4/5 flex flex-col gap-2">
+
+                <h2 class="text-xl w-full font-serif rounded-t bg-red-500 text-white font-medium px-5 py-3">Account Overview/<span class="text-lg text-blue-700">profile</span></h2>
+                
+                <div class="bg-white">
+                    
+                    <div class="px-5 py-5">
+                        <form action="" class="w-full flex gap-5">
+                            <div class="w-1/2">
+                                <label for="fname" class="font-medium">First Name</label><br>
+                                <input type="text" placeholder="" class="w-full border border-red-200">
+                            </div>
+                            <div class="w-1/2">
+                                <label for="lname" class=" font-medium">Last Name</label><br>
+                                <input type="text" placeholder="" class="w-full border border-red-200">
+                            </div>
+                        </form>
+
+                        <div class="mt-7 w-1/2 text-xl">
+                            <p class="font-bold text-xl">Email:</p>
+                            <p>abcde@gmail.com</p>
+                        </div>
+
+                        <p class="mt-5 font-bold text-xl">Address</p>
+                        <address>
+                            abcde<br/>
+                            2nd avenue, Road 4 off okania new road, mgbuoba port Harcourt<br/>
+                            PORTHARCOURT-ADA GEORGE, Rivers<br/>
+                            <a href="tel:+2347015458847">+2347015458847</a><a href="tel:+2349058018985">+2349058018985</a><br/>
+                        </address>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <style>
+        .sideAcc a{
+            color: gray;
+        }
+
+        .sideAcc a:hover{
+            color:red;
+        }
+    </style>
+
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+</body>
+</html>

@@ -196,10 +196,8 @@
         // errors.push({text: "email", el: email});
         // }
 
-        if (password.value == "") {
+        if (password.value == "" || password.value < 8) {
         errors.push({text: "password", el: password});
-        } else if (password.length < 8) {
-        errors.push({text: "password too short", el: password});
         } else if (!pass_reg.test(password.value)) {
         errors.push({text: "password", el: password});
         }
@@ -232,6 +230,7 @@
         });
         
         errors_el.appendChild(error_el);
+
         }
 
 

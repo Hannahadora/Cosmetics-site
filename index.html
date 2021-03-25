@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d2e0cde1e0.js" crossorigin="anonymous"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/d51960ec2325752ed629b83e3f40c4c4?family=Roos+St+Regis+Text" rel="stylesheet" type="text/css"/>
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <title>Home</title>
     <link rel="icon" href="/Images/hanna.ico">
 </head>
 <body>
-    <div class="header fixed top-0 w-full z-10 bg-white lg:px-24 md:px-10 px-5 py-2 shadow-lg">
+    <div class="header fixed top-0 w-full z-50 bg-white lg:px-24 md:px-10 px-5 py-2 shadow-lg">
         <div class="flex items-center justify-between">
             
             <div class="lg:w-1/2 w-10/12 flex flex-row lg:items-start items-center justify-between">
@@ -21,7 +22,7 @@
                 
                 <div class="search h-14 w-full flex items-center">
                     <i class="lg:block hidden mr-2 fas fa-search"></i>
-                    <input class="h-12 w-full text-sm placeholder-gray-600 focus:outline-none border-b border-gray-600" type="text" placeholder="Search">
+                    <input class="searchArea h-12 w-full text-base placeholder-gray-600 focus:outline-none border-b border-gray-600" type="text" placeholder="Search Products...">
                 </div>
             </div>
 
@@ -67,7 +68,7 @@
 
 
                 <!--------------------MAIN--------------------->
-    <div class="mt-24 lg:px-24 md:px-10 px-5 w-full flex flex-col items-center justify-between">
+    <!-- <div class="main mt-24 lg:px-24 md:px-10 px-5 w-full flex flex-col items-center justify-between">
         <div class="aside bg-white w-full rounded lg:flex hidden items-center justify-center mb-2" data-aos="fade-down" data-aos-anchor-placement="down-up">
             <a class="px-4 py-2" href="">MakeUps</a>
             <a class="px-4 py-2" href="">MakeOver Session</a>
@@ -84,189 +85,196 @@
         <div class="cover mt-1 bg-center bg-cover bg-no-repeat w-full" data-aos="fade-down" data-aos-anchor-placement="down-up" style="background-image: url('https://images.unsplash.com/photo-1577195594933-f844fa36c37c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bGlwc3RpY2t8ZW58MHwwfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
             <div class="text lg:mx-24 my-40 text-center text-gray-700">
                 <h1 class="lg:text-5xl font-serif leading-10">Adora's Haven<br/> Shop Beautifully with style in Luxury</h1>
-                <button class="butt my-7 cursor-pointer focus:outline-none"><a href="" class="lg:text-base text-sm lg:px-7 px-3 lg:py-2 py-1 bg-red-300 text-white">Shop Now</a></button>
+                <button class="mt-7 bg-red-300 hover:bg-red-500 hover:text-white font-medium text-xl px-4 py-2 border border-black">Shop Now</button>
             </div>
         </div> 
-    </div>
+    </div> -->
 
     <!-- <a href=""><i title="Live Chat" class="far fa-comment text-white text-3xl fixed bottom-40 bg-blue-500 mx-20 p-3 rounded-full"></i></a> -->
 
-    <!------------------------------------------------TRENDS------------------->
-        <h1 class="text-center my-12"><a class="px-7 py-3 border-b-4 text-gray-700 hover:text-red-700" href="">Trending Now</a></h1>
 
-    <div class="trends lg:mx-24 mx-5 my-7 flex items-start justify-center">
-        <div class="okori lg:w-1/5 w-1/3 lg:mr-7 mr-2">
-            <img class="w-full mb-2 border" src="./images/lipstick.png" alt="">
-            <div class="imgtext text-center">
-                <p class="font-medium text-sm">Clinique Lipstick</p>
-                <p class="font-semibold mb-4">$7.00</p>
-                 <button class="butt cursor-pointer focus:outline-none"><a href="" class="lg:text-base text-xs lg:px-7 px-5 lg:py-2 py-1 bg-red-300 text-white ">Add <span class="lg:inline hidden">To Cart</span></a></button>
+
+    <div class="mx-24 mt-40 border-t " style="font-family: roos st regis;">
+
+        <P class="font-serif my-10 text-2xl">PERFECT TOUCH</P>
+        <h1 class="font-serif px-20 text-9xl border-b border-red-200 border-4">Flawless<br/>Outcomes</h1>
+
+        <div class="my-14 flex">
+
+            <img class="w-5/12" src="https://images.pexels.com/photos/3912572/pexels-photo-3912572.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
+
+            <div class="w-1/2  bg-red-200 shadow p-20 flex flex-col items-center justify-center">
+                <P class="text-2xl font-mono text-center">We are aimed at giving you a Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus aperiam ad ea a explicabo deleniti!</P>
+                <button class="mt-7 bg-red-300 hover:bg-red-500 hover:text-white font-medium text-xl px-4 py-2 border border-black">Book a Session</button>
             </div>
         </div>
 
-        <div class="okori lg:w-1/5 w-1/3 lg:mr-7 mr-2">
-            <img class="w-full mb-2 border" src="./images/mascara.png" alt="">
-            <div class="imgtext text-center">
-                <p class="font-medium text-sm">Lovely Mascara</p>
-                <p class="font-semibold mb-4">$5.00</p>
-                 <button class="butt cursor-pointer focus:outline-none"><a href="" class="lg:text-base text-xs lg:px-7 px-5 lg:py-2 py-1 bg-red-300 text-white ">Add <span class="lg:inline hidden">To Cart</span></a></button>
+    </div>
+
+
+    <div class="mx-24 mt-60" style="font-family: roos st regis;">
+
+        <P class="font-serif my-10 text-2xl">AUTHENTIC PRODUCTS</P>
+        <h1 class="font-serif px-20 text-9xl border-b border-red-200 border-4">Satisfying<br/>Cosmetics</h1>
+
+        <div class="my-14 flex items-center">
+
+            <div class="w-full grid grid-cols-2">
+                <img class="w-full" src="https://images.pexels.com/photos/2866796/pexels-photo-2866796.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
+                <img class="w-full" src="https://images.pexels.com/photos/2804971/pexels-photo-2804971.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <img class="w-full" src="https://images.pexels.com/photos/5582621/pexels-photo-5582621.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <img class="w-full" src="https://images.pexels.com/photos/6527697/pexels-photo-6527697.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+            </div>
+
+            <div class="w-1/2 bg-red-200 shadow p-20 flex flex-col items-center justify-center">
+                <P class="text-2xl font-mono text-center">We are aimed at giving you a Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus aperiam ad ea a explicabo deleniti!</P>
+                <button class="mt-7 bg-red-300 hover:bg-red-500 hover:text-white font-medium text-xl px-4 py-2 border border-black">Shop Now</button>
             </div>
         </div>
 
-        <div class="okori lg:w-1/5 w-1/3 lg:mr-7 lg:mr-2">
-            <img class="w-full mb-2 border" src="./images/Frontron.png" alt="">
-            <div class="imgtext text-center">
-                <p class="font-medium text-sm">Frontron hair Product</p>
-                <p class="font-semibold mb-4">$11.00</p>
-                 <button class="butt cursor-pointer focus:outline-none"><a href="" class="lg:text-base text-xs lg:px-7 px-5 lg:py-2 py-1 bg-red-300 text-white ">Add <span class="lg:inline hidden">To Cart</span></a></button>
+    </div>
+
+
+    <div class="mx-24 mt-60" style="font-family: roos st regis;">
+
+        <P class="font-serif my-10 text-2xl">OUR STUDIO</P>
+        <h1 class="font-serif px-20 text-9xl border-b border-red-200 border-4">Shots Capturing<br/>Beauty</h1>
+
+        <div class="my-14 flex items-center">
+
+            <div class="w-1/2 z-10 bg-red-200 shadow p-20 flex flex-col items-center justify-center">
+                <P class="text-2xl font-mono text-center">We are aimed at giving you a Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus aperiam ad ea a explicabo deleniti!</P>
+                <button class="mt-7 bg-red-300 hover:bg-red-500 hover:text-white font-medium text-xl px-4 py-2 border border-black">Book A PhotoShoot</button>
             </div>
+
+            <img class="photoShoot -ml-40 w-3/5" src="https://images.pexels.com/photos/4684193/pexels-photo-4684193.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
         </div>
 
-        <div class="okori w-1/5 lg:mr-7 mr-2 lg:block hidden">
-            <img class="w-full mb-2 border" src="./images/Aftershave.png" alt="">
-            <div class="imgtext text-center">
-                <p class="font-medium text-sm">After shave oil fragrance</p>
-                <p class="font-semibold mb-4">$7.00</p>
-                 <button class="butt cursor-pointer focus:outline-none"><a href="" class="lg:text-base text-xs lg:px-7 px-5 lg:py-2 py-1 bg-red-300 text-white ">Add <span class="lg:inline hidden">To Cart</span></a></button>
+    </div>
+
+
+    <div class="mx-24 mt-60" style="font-family: roos st regis;">
+
+        <P class="font-serif my-10 text-2xl">OUR GALLERY</P>
+        <h1 class="font-serif px-20 text-9xl border-b border-red-200 border-4">Inspiring and<br/>Entertaining</h1>
+
+        <div class="my-14 flex items-center">
+
+            <div class="galleryBox grid grid-cols-4">
+                <img class="gallery w-full" src="https://images.pexels.com/photos/2035464/pexels-photo-2035464.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <img class="gallery w-full" src="https://images.pexels.com/photos/2748242/pexels-photo-2748242.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <img class="gallery w-full" src="https://images.pexels.com/photos/6271979/pexels-photo-6271979.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <img class="gallery w-full" src="https://images.pexels.com/photos/6233289/pexels-photo-6233289.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <img class="gallery w-full" src="https://images.pexels.com/photos/5904145/pexels-photo-5904145.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <img class="gallery w-full" src="https://images.pexels.com/photos/5995324/pexels-photo-5995324.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <img class="gallery w-full" src="https://images.pexels.com/photos/4684195/pexels-photo-4684195.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <img class="gallery w-full" src="https://images.pexels.com/photos/2748239/pexels-photo-2748239.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <img class="gallery w-full" src="https://images.pexels.com/photos/2690323/pexels-photo-2690323.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <img class="gallery w-full" src="https://images.pexels.com/photos/6527699/pexels-photo-6527699.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <img class="gallery w-full" src="https://images.pexels.com/photos/6986012/pexels-photo-6986012.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <img class="gallery w-full" src="https://images.pexels.com/photos/6690438/pexels-photo-6690438.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
             </div>
+
+
+            <div class="bg-red-200 shadow p-20 flex flex-col items-center justify-center">
+                <P class="text-2xl font-mono text-center">We are aimed at giving you a Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus aperiam ad ea a explicabo deleniti!</P>
+                <button class="mt-7 bg-red-300 hover:bg-red-500 hover:text-white font-medium text-xl px-4 py-2 border border-black">Explore</button>
+            </div>
+
         </div>
 
-        <div class="okori w-1/5 lg:block hidden">
-            <img class="w-full mb-2 border" src="./images/sanitizer.png" alt="">
-            <div class="imgtext text-center">
-                <p class="font-medium text-sm">Hand Sanitizer</p>
-                <p class="font-semibold mb-4">$9.00</p>
-                <button class="butt cursor-pointer focus:outline-none"><a href="" class="lg:text-base text-xs lg:px-7 px-5 lg:py-2 py-1 bg-red-300 text-white ">Add <span class="lg:inline hidden">To Cart</span></a></button>
-            </div>
-        </div>    
     </div>
 
 
 
-<!-----------------------------------------TOPSALES------------------->
+    <div class="mx-24 mt-60" style="font-family: roos st regis;">
 
-    <h1 class="mt-24 text-center"><a class="px-7 py-3 border-b-4 text-gray-700 hover:text-red-700" href="">Top sellers</a></h1>
+        <P class="font-serif my-10 text-2xl">UPDATES</P>
+        <h1 class="font-serif px-20 text-9xl border-b border-red-200 border-4">Blog and<br/>Trends</h1>
 
-    <div class="topsales lg:mx-24 mx-5 lg:my-20 my-10 flex items-start justify-center">
-        <div class="okori w-1/3 lg:mr-7 mr-5">
-            <img class="w-full mb-4" src="https://images.unsplash.com/photo-1531646317777-0619c7c5d1d3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y29zbWV0aWN8ZW58MHwwfDB8d2hpdGU%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-            <div class="imgtext text-center">
-                <p class="font-medium text-sm mb-1">Nudebynature setting Powder</p>
-                <p class="font-semibold mb-2">$12.00</p>
-                <button class="butt cursor-pointer focus:outline-none"><a href="" class="lg:text-base text-sm lg:px-7 px-3 lg:py-2 py-1 bg-red-300 text-white ">Shop <span class="lg:inline hidden">Now</span></a></button>
-            </div>
+
+        <div class="w-1/3 my-10 text-center p-5 flex flex-col items-center justify-center">
+            <P class="text-xl font-mono text-center">We are aimed at giving you a Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus aperiam ad ea a explicabo deleniti!</P>
+            <button class="mt-7 bg-red-300 hover:bg-red-500 hover:text-white font-medium text-xl px-4 py-2 border border-black">Read More</button>
         </div>
 
-        <div class="okori w-1/3 lg:mr-7 mr-5">
-            <img class="w-full mb-4" src="https://images.unsplash.com/photo-1584051022233-c648601a6623?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGNvc21ldGljc3xlbnwwfDB8MHxibHVl&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-            <div class="imgtext text-center">
-                <p class="font-medium text-sm mb-3">Lampre eye treat</p>
-                <p class="font-semibold mb-4">$12.00</p>
-                <button class="butt cursor-pointer focus:outline-none"><a href="" class="lg:text-base text-sm lg:px-7 px-3 lg:py-2 py-1 bg-red-300 text-white ">Shop <span class="lg:inline hidden">Now</span></a></button>
-            </div>
+        <div class="my-10 flex ">
+            
+
+            <!-- <div class="bg-red-200 flex flex-col items-center justify-center gap-4">
+                <img class="w-full ml-40" src="https://images.pexels.com/photos/2649165/pexels-photo-2649165.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <img class="w-full ml-40" src="https://images.pexels.com/photos/654693/pexels-photo-654693.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <img class="w-full ml-40" src="https://images.pexels.com/photos/3579181/pexels-photo-3579181.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+            </div> -->
         </div>
 
-        <div class="okori w-1/3">
-            <img class="w-full mb-4" src="https://images.unsplash.com/photo-1575257963758-c4822d2a1f98?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjN8fGNvc21ldGljc3xlbnwwfDB8MHxibHVl&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-            <div class="imgtext text-center">
-                <p class="font-medium text-sm font- mb-1">Onne white body set</p>
-                <p class="font-semibold mb-2">$50.00</p>
-                <button class="butt cursor-pointer focus:outline-none"><a href="" class="lg:text-base text-sm lg:px-7 px-3 lg:py-2 py-1 bg-red-300 text-white ">Shop <span class="lg:inline hidden">Now</span></a></button>
-            </div>
-        </div>
     </div>
 
 
 
-    <!----------------------------------------PROMO SALES------------->
+    <!-- ----- ABOUT---- -->
 
-    <h1 class="mt-24 text-center"><a class="px-7 py-3 border-b-4 text-gray-700 hover:text-red-700" href="">Promo Sales !!!</a></h1>
+    <div class="mx-24 mt-60" style="font-family: roos st regis;">
 
-    <div class="promo lg:mx-24 mx-5 lg:my-20 my-10 flex items-start justify-center">
-        <div class="okori lg:w-1/4 w-1/2 lg:mr-7 mr-5">
-            <img class="w-full mb-4" src="https://images.pexels.com/photos/5582621/pexels-photo-5582621.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-            <div class="imgtext text-center">
-                <p class="lg:text-base text-sm mb-3">lite skin Care</p>
-                <p class="lg:text-base text-sm font-medium mb-4">30% Discount on all products</p>
-                 <button class="butt cursor-pointer focus:outline-none"><a href="" class="lg:text-base text-sm lg:px-7 px-3 lg:py-2 py-1 bg-red-300 text-white ">Shop <span class="lg:inline hidden">Now</span></a></button>
+        <P class="my-10 text-2xl">ABOUT US</P>
+        <h1 class="px-20 text-9xl border-b border-red-200 border-4">Who Are<br/>We???</h1>
+
+        <div class="my-14 flex">
+
+            <img class="w-5/12" src="https://images.pexels.com/photos/1854897/pexels-photo-1854897.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+
+            <div class="w-1/2 bg-red-200 shadow p-20 flex flex-col items-center justify-center">
+                <P class="text-2xl font-mono text-center">We are not just about your looks but we ensure that the looks is reflected in every shot you take Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus aperiam ad ea a explicabo deleniti!</P>
+                <button class="mt-7 bg-red-300 hover:bg-red-500 hover:text-white font-medium text-xl px-4 py-2 border border-black">About Us</button>
             </div>
         </div>
 
-        <div class="okori lg:w-1/4 w-1/2 lg:mr-7 mr-5">
-            <img class="w-full mb-4" src="https://images.unsplash.com/photo-1598452963314-b09f397a5c48?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8bGlwc3RpY2tzfGVufDB8MnwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-            <div class="imgtext text-center">
-                <p class="lg:text-base text-sm mb-3">Gucci lipstick</p>
-                <p class="lg:text-base text-sm font-medium mb-4">20% Discount on all products</p>
-                 <button class="butt cursor-pointer focus:outline-none"><a href="" class="lg:text-base text-sm lg:px-7 px-3 lg:py-2 py-1 bg-red-300 text-white ">Shop <span class="lg:inline hidden">Now</span></a></button>
-            </div>
-        </div>
-
-        <div class="okori w-1/4 lg:mr-7 mr-5 lg:block hidden">
-            <img class="w-full mb-4" src="https://images.pexels.com/photos/6527701/pexels-photo-6527701.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-            <div class="imgtext text-center">
-                <p class="lg:text-base text-sm mb-3">Makeovers</p>
-                <p class="lg:text-base text-sm font-medium mb-4">30% Discount on all products</p>
-                 <button class="butt cursor-pointer focus:outline-none"><a href="" class="lg:text-base text-sm lg:px-7 px-3 lg:py-2 py-1 bg-red-300 text-white ">Shop <span class="lg:inline hidden">Now</span></a></button>
-            </div>
-        </div>
-
-        <div class="okori w-1/4 lg:block hidden">
-            <img class="w-full mb-4" src="https://images.pexels.com/photos/3989394/pexels-photo-3989394.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-            <div class="imgtext text-center">
-                <p class="lg:text-base text-sm mb-3">Queens</p>
-                <p class="lg:text-base text-sm font-medium mb-4">45% Discount on all products</p>
-                <button class="butt cursor-pointer focus:outline-none"><a href="" class="lg:text-base text-sm lg:px-7 px-3 lg:py-2 py-1 bg-red-300 text-white ">Shop <span class="lg:inline hidden">Now</span></a></button>
-            </div>
-        </div>
     </div>
 
 
 
-    <!-------------------------------------------BLOG------------------------------>
+    <!-- REVIEWS -->
 
-    <h1 class="mt-24 text-center"><a class="px-7 py-3 border-b-4 text-gray-700 hover:text-red-700" href="blog.html">Our Blog</a></h1>
 
-    <div class="blog lg:mx-24 mx-5 my-20 flex items-start justify-center">
-        <div class="okori w-1/3 mr-7 lg:block hidden">
-            <img class="w-full" src="https://images.unsplash.com/photo-1611605472181-7962c1c85ed5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8bGlwc3RpY2t8ZW58MHwwfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-            <div class="imgtext mt-2 text-center">
-                <p class="lg:text-sm text-xs"> 11/12/2020</p>
-                <p class="font-medium mt-4 lg:text-xl text-sm"><i>The secret to a good shade of lipstick</i></p>
-                <p class="lg:text-sm text-xs mb-4">By Jae D </p>
-                <button class="butt cursor-pointer focus:outline-none"><a href="" class="lg:text-base text-sm lg:px-7 px-5 lg:py-2 py-1 bg-red-300 text-white ">Read More</a></button>
+    <div class="mx-24 mt-60" style="font-family: roos st regis;">
+
+        <P class="my-10 text-2xl">CUSTOMERS REVIEW</P>
+        <h1 class="px-20 text-9xl border-b border-red-200 border-4">Satisfaction and <br/>Beauty</h1>
+
+        <div class="flex items-start gap-5 p-10 items-center lg:w-8/12 w-10/12 h-80 mx-auto md:mt-20 my-10 bg-red-200 bg-opacity-40 shadow">
+
+            <div class="w-1/3 flex flex-col items-center gap-2">
+                <img id="customerImage" class="w-40 h-40 rounded-full" src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <p id="customerName" class="text-2xl font-medium font-mono"><i>Anne Marie</i></p>
+                <div class="flex items-center">
+                    <i class="fas fa-star text-red-700"></i>
+                    <i class="fas fa-star text-red-700"></i>
+                    <i class="fas fa-star text-red-700"></i>
+                    <i class="fas fa-star text-red-700"></i>
+                    <i class="far fa-star text-red-700"></i>
+                </div>
             </div>
+
+            <p id="customerNote" class="w-3/5 text-center text-2xl font-medium font-mono">"I believe in the skin care Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium debitis sapiente unde harum nulla totam?"</p>
         </div>
 
-        <div class=" okori w-1/3 mr-7 lg:block hidden">
-            <img class="w-full" src="https://images.unsplash.com/photo-1470259078422-826894b933aa?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8bW9kZWx8ZW58MHwwfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-            <div class="imgtext mt-2 text-center">
-                <p class="lg:text-sm text-xs"> 11/12/2020</p>
-                <p class="font-medium mt-4 lg:text-xl text-sm"><i>My Hair and I: wearing a Coloured Hair</i></p>
-                <p class="lg:text-sm text-xs mb-4">By Jae D </p>
-                <button class="butt cursor-pointer focus:outline-none"><a href="" class="lg:text-base text-sm lg:px-7 px-5 lg:py-2 py-1 bg-red-300 text-white ">Read More</a></button>
-            </div>
+        <div class="mx-24 mt-10 cursor-pointer flex items-center justify-center gap-5">
+            <a class="btn prevBtn"><i class="text-2xl hover:text-red-500 fas fa-arrow-left"></i></a>
+            <a class="btn nextBtn"><i class="text-2xl hover:text-red-500 fas fa-arrow-right"></i></a>
         </div>
 
-        <div class="okori lg:w-1/3 w-full">
-            <img class="w-full" src="https://images.unsplash.com/photo-1549488497-94b52bddac5d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YnJpZGV8ZW58MHwwfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-            <div class="imgtext mt-2 text-center">
-                <p class="lg:text-sm text-xs"> 11/12/2020</p>
-                <p class="font-medium mt-4 lg:text-xl text-sm"><i>How to wear the right look on your big day</i></p>
-                <p class="lg:text-sm text-xs mb-4">By Jae D </p>
-                <button class="butt cursor-pointer focus:outline-none"><a href="" class="lg:text-base text-sm lg:px-7 px-5 lg:py-2 py-1 bg-red-300 text-white ">Read More</a></button>
-            </div>
-        </div>
     </div>
+
 
 
     <!-------------------------------------NEWSLETTER---------------->
 
-    <div class="w-full lg:px-24 md:px-2 px-1 py-12 my-20" style="background-color: rgb(235, 219, 214);">
+    <div class="w-full bg-red-200 lg:px-24 md:px-2 px-1 py-12 my-20">
 
         <div class=" flex lg:flex-row flex-col lg:items-center items-start justify-between">
-            <h1 class="lg:w-5/12 w-full lg:text-3xl md:text-2xl sm:text-xl text-base lg:leading-10 font-bold">Sign Up Now For Our Discount Products</h1>
+            <h1 class="lg:w-5/12 w-full lg:text-3xl md:text-2xl sm:text-xl text-base lg:leading-10 font-bold" style="font-family: roos st regis;">Sign Up Now For Our Discount Products</h1>
 
-            <form class="lg:w-7/12 w-9/12 lg:ml-20 ml-0 flex gap-2" action="">
+            <form class="lg:w-7/12 w-9/12 lg:ml-20 ml-0 flex gap-2 font-mono" action="">
                 <input class="border-2 border-gray-500 rounded focus:outline-none w-full pr-2 lg:py-2 py-1" type="mail" placeholder="mailto@youmail.com" style="background-color: rgb(235, 219, 214);">
                 <button class="butt cursor-pointer focus:outline-none"><a href="" class=" rounded px-7 lg:py-3 py-2 bg-red-300 text-white ">Subscribe</a></button>
             </form>
@@ -279,7 +287,7 @@
     <div class="footer w-full lg:my-20 my-7 lg:px-24 px-5 text-gray-500">
 
         <div class="flex lg:flex-row flex-col items-start justify-between">
-            <div class="footerlinks lg:text-sm text-xs">
+            <div class="footerlinks lg:text-sm text-xs font-mono">
                 <p class="mb-3 font-semibold">COMPANY</p>
                 <p class="mb-3"><a class="cursor-pointer" href="index.html" >Home</a></p>
                 <p class="mb-3"><a class="cursor-pointer" href="about.html" >About</a></p>
@@ -338,6 +346,36 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script>
         function openNav() {
           document.getElementById("mySidenav").style.width = "250px";
@@ -348,19 +386,108 @@
         }
     </script>
 
-    <script type="text/javascript">
-    
-    $(window).on("onscroll", function() {
 
-        if($(window).scroll() ) {
-            $('header').addClass('black');
-        }
-        else{
-            $('header').removeClass('black');
-        }
-    });
+
+
+<script type="text/javascript">
     
-    </script>
+    
+
+
+    //  JAVASCRIPT FOR THE SEARCH BOX //
+
+        (function(){
+
+        const searchBox = document.querySelector('.searchArea')
+        const body = document.querySelector('body')
+        const main = document.querySelector('.main')
+
+        searchBox.addEventListener('keyup', (e) => {
+
+            const searchFilter = e.target.value.toLowerCase().trim()
+            //display only items that contain filter input
+
+            body.forEach((item) => {
+                if (item.textContent.includes(searchFilter)){
+                    item.style.display = 'block'
+                } else {
+                    item.style.display = 'none'
+                    main.style.display = 'none'
+                }
+            })
+        })
+
+        })();
+
+
+
+
+
+
+
+// JAVASCRIPT FOR REVIEW / TESTIMONIAL FUNCTION //
+(function(){
+    const customerImage = document.querySelector('#customerImage')
+    const customerName = document.querySelector('#customerName')
+    const customerNote = document.querySelector('#customerNote')
+    const buttons = document.querySelectorAll('.btn')
+    let index = 0
+    const customers = []
+
+    //Create a new customer using a customer constructor
+    
+    //Customer Constructor
+    function Customer(img, name, note) {
+        this.img = img
+        this.name = name
+        this.note = note
+    }
+
+    //Create new customer using the constructor function
+
+    function createCustomer(img, name, note) {
+       
+        let customer = new Customer(img, name, note)
+
+        customers.push(customer)
+    }
+
+    
+    createCustomer('https://images.pexels.com/photos/3763152/pexels-photo-3763152.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 'Jesse Jay', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis neque reprehenderit laborum, corporis explicabo assumenda. Porro impedit consectetur animi, reprehenderit recusandae sapiente at aliquam reiciendis modi ipsam rerum suscipit distinctio?')
+    createCustomer('https://images.pexels.com/photos/7204239/pexels-photo-7204239.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', 'Sandy', 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock')
+    createCustomer('https://images.pexels.com/photos/3122730/pexels-photo-3122730.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 'Amy', 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.')
+    createCustomer('https://images.pexels.com/photos/681637/pexels-photo-681637.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 'Tyrell', 'If you are going to use a passage of Lorem Ipsum, you need to be sure there isn\'t anything embarrassing hidden in the middle of text.')
+    createCustomer('https://images.pexels.com/photos/5561352/pexels-photo-5561352.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 'Wanda', 'Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.')
+    
+
+    buttons.forEach(function(button){
+        button.addEventListener('click', function(e){
+            if (e.target.parentElement.classList.contains('prevBtn')){
+               if(index === 0){
+                    index = customers.length
+               }
+               index--
+               customerImage.src = customers[index].img
+               customerName.innerText = customers[index].name
+               customerNote.innerText = customers[index].note
+            }
+            if (e.target.parentElement.classList.contains('nextBtn')){
+                index++
+                if(index === customers.length){
+                     index = 0
+                }
+                customerImage.src = customers[index].img
+                customerName.innerText = customers[index].name
+                customerNote.innerText = customers[index].note
+             }
+        })
+    })
+    
+})()
+
+
+
+</script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -369,6 +496,7 @@
                 offset:400,
                 duration:1500
             });
+
         </script>
 
 </body>

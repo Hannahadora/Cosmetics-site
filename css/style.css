@@ -63,7 +63,24 @@ a{
         }
     }
 
+
+    .photoShoot{
+        animation:shot 30s ease-in infinite;
+    }
   
+    @keyframes shot {
+        0%{
+            background-image: url('https://images.pexels.com/photos/2697787/pexels-photo-2697787.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+        }
+        50%{
+            background-image: url('https://images.unsplash.com/photo-1552511556-9f16dcb6561f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8YmVhdXR5fGVufDB8MHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+        }
+        100%{
+            background-image: url('https://images.unsplash.com/photo-1577195594933-f844fa36c37c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bGlwc3RpY2t8ZW58MHwwfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+        }
+    }
+
+
 .header.black{
     background-color: black;
 }

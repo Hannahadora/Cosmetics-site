@@ -68,36 +68,41 @@
 
 
                 <!--------------------MAIN--------------------->
-    <!-- <div class="main mt-24 lg:px-24 md:px-10 px-5 w-full flex flex-col items-center justify-between">
+    <div class="main mt-24 lg:px-24 md:px-10 px-5 w-full flex flex-col items-center justify-between">
         <div class="aside bg-white w-full rounded lg:flex hidden items-center justify-center mb-2" data-aos="fade-down" data-aos-anchor-placement="down-up">
             <a class="px-4 py-2" href="">MakeUps</a>
-            <a class="px-4 py-2" href="">MakeOver Session</a>
+            <a class="px-4 py-2" href="gallery.html">MakeOver Session</a>
             <a class="px-4 py-2" href="">Body</a>
             <a class="px-4 py-2" href="">Skin Care</a>
-            <a class="px-4 py-2" href="">PhotoShoot</a>
+            <a class="px-4 py-2" href="gallery.html">PhotoShoot</a>
             <a class="px-4 py-2" href="">Hairs</a>
             <a class="px-4 py-2" href="">Perfume</a>
             <a class="px-4 py-2" href="">Others</a>
-            <a class="px-4 py-2" href="">Gallery</a>
-            <a class="px-4 py-2" href="">Our Blog</a>
+            <a class="px-4 py-2" href="gallery.html">Gallery</a>
+            <a class="px-4 py-2" href="blog.html">Our Blog</a>
         </div>
 
-        <div class="cover mt-1 bg-center bg-cover bg-no-repeat w-full" data-aos="fade-down" data-aos-anchor-placement="down-up" style="background-image: url('https://images.unsplash.com/photo-1577195594933-f844fa36c37c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bGlwc3RpY2t8ZW58MHwwfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
-            <div class="text lg:mx-24 my-40 text-center text-gray-700">
-                <h1 class="lg:text-5xl font-serif leading-10">Adora's Haven<br/> Shop Beautifully with style in Luxury</h1>
-                <button class="mt-7 bg-red-300 hover:bg-red-500 hover:text-white font-medium text-xl px-4 py-2 border border-black">Shop Now</button>
+        <div class="mt-1 w-full flex items-center gap-5 border-b border-red-200 border-4" data-aos="fade-down" data-aos-anchor-placement="down-up">
+            <div class="h-full w-1/2 px-24" style="font-family: roos st regis;">
+                <h1 class="font-serif px-2 py-5 text-7xl">Adora's<br/>Haven</h1>
+                <P class="text-xl font-mono">We are aimed at giving you a Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus aperiam ad ea a explicabo deleniti!</P>
+                <button class="mt-7 bg-red-300 hover:bg-red-500 hover:text-white font-medium text-xl px-4 py-2 border border-black"><a href="products.html">Shop Now</a></button>
             </div>
+            
+            <div class="cover w-1/2 h-full bg-center bg-no-repeat bg-cover"></div>
         </div> 
-    </div> -->
-
-    <!-- <a href=""><i title="Live Chat" class="far fa-comment text-white text-3xl fixed bottom-40 bg-blue-500 mx-20 p-3 rounded-full"></i></a> -->
+    </div> 
 
 
 
-    <div class="mx-24 mt-40 border-t " style="font-family: roos st regis;">
+<!-- <a href=""><i title="Live Chat" class="far fa-comment text-white text-3xl fixed bottom-40 bg-blue-500 mx-20 p-3 rounded-full"></i></a> -->
+
+
+
+    <div class="mx-24 mt-20 " style="font-family: roos st regis;">
 
         <P class="font-serif my-10 text-2xl">PERFECT TOUCH</P>
-        <h1 class="font-serif px-20 text-9xl border-b border-red-200 border-4">Flawless<br/>Outcomes</h1>
+        <h1 class="font-serif px-20 text-8xl border-b border-red-200 border-4">Flawless Outcomes</h1>
 
         <div class="my-14 flex">
 
@@ -105,17 +110,61 @@
 
             <div class="w-1/2  bg-red-200 shadow p-20 flex flex-col items-center justify-center">
                 <P class="text-2xl font-mono text-center">We are aimed at giving you a Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus aperiam ad ea a explicabo deleniti!</P>
-                <button class="mt-7 bg-red-300 hover:bg-red-500 hover:text-white font-medium text-xl px-4 py-2 border border-black">Book a Session</button>
+                <button class="bookMakeup_open mt-7 bg-red-300 hover:bg-red-500 hover:text-white font-medium text-xl px-4 py-2 border border-black">Book a Session</button>
             </div>
         </div>
 
     </div>
 
 
+    <!-- POP UP FOR MAKEOVERS SESSION -->
+    <div id="bookMakeup" class="bg-white rounded md:w-1/2 w-11/12 mx-auto shadow">
+      
+        <form class="p-10 flex flex-col gap-2 w-full font-mono">
+          <label for="name">Name</label>
+          <input class="border px-2 py-1 text-base" type="text" value="Name"><br>
+          
+          <label for="phoneNumber">Phone Number</label>
+          <input class="border px-2 py-1 text-base" type="phoneNumber" value="Phone Number"><br>
+  
+          <label for="shootType">What kind of Makeover do you want?</label>
+          <select class="border px-2 py-1 text-base" name="makeUpType" id="">
+            <option value="regular">Regular</option>
+            <option value="bridal">Bridal</option>
+            <option value="engagement">Engagement</option>
+            <option value="studio">Studio</option>
+          </select><br>
+        
+          <label for="shootDay">What day would you loveyour shoot</label>
+          <select class="border px-2 py-1 text-base" name="shootDay" id="">
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="wednesday">Wednesday</option>
+            <option value="thursday">Thursday</option>
+            <option value="friday">Friday</option>
+            <option value="saturday">Saturday</option>
+            <option value="sunday">Sunday</option>
+          </select>
+        </form>
+  
+        <div class="flex items-center justify-center gap-5">
+          <input type="button" class="bookMakeUp_close cursor-pointer text-white text-sm rounded-full px-5 py-3 float-right mr-10 my-7" style="background-color: #FF7D69;" value="View Price list">
+          <input type="button" class="bookMakeUp_close cursor-pointer text-white text-sm rounded-full px-5 py-3 float-right mr-10 my-7" style="background-color: #FF7D69;" value="Proceed to Payment">
+        </div>
+  
+      </div>
+  
+
+      <!-- ************************************************************************** -->
+
+
+
+
+
     <div class="mx-24 mt-60" style="font-family: roos st regis;">
 
-        <P class="font-serif my-10 text-2xl">AUTHENTIC PRODUCTS</P>
-        <h1 class="font-serif px-20 text-9xl border-b border-red-200 border-4">Satisfying<br/>Cosmetics</h1>
+        <P class="font-serif my-10"><a class="text-2xl" href="products.html">AUTHENTIC PRODUCTS</a></P>
+        <h1 class="font-serif px-20 text-8xl border-b border-red-200 border-4">Satisfying Cosmetics</h1>
 
         <div class="my-14 flex items-center">
 
@@ -128,7 +177,7 @@
 
             <div class="w-1/2 bg-red-200 shadow p-20 flex flex-col items-center justify-center">
                 <P class="text-2xl font-mono text-center">We are aimed at giving you a Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus aperiam ad ea a explicabo deleniti!</P>
-                <button class="mt-7 bg-red-300 hover:bg-red-500 hover:text-white font-medium text-xl px-4 py-2 border border-black">Shop Now</button>
+                <button class="mt-7 bg-red-300 hover:bg-red-500 hover:text-white font-medium text-xl px-4 py-2 border border-black"><a href="products.html">Shop Now</a></button>
             </div>
         </div>
 
@@ -138,13 +187,13 @@
     <div class="mx-24 mt-60" style="font-family: roos st regis;">
 
         <P class="font-serif my-10 text-2xl">OUR STUDIO</P>
-        <h1 class="font-serif px-20 text-9xl border-b border-red-200 border-4">Shots Capturing<br/>Beauty</h1>
+        <h1 class="font-serif px-20 text-8xl border-b border-red-200 border-4">Shots Capturing Beauty</h1>
 
         <div class="my-14 flex items-center">
 
             <div class="w-1/2 z-10 bg-red-200 shadow p-20 flex flex-col items-center justify-center">
                 <P class="text-2xl font-mono text-center">We are aimed at giving you a Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus aperiam ad ea a explicabo deleniti!</P>
-                <button class="mt-7 bg-red-300 hover:bg-red-500 hover:text-white font-medium text-xl px-4 py-2 border border-black">Book A PhotoShoot</button>
+                <button class="bookShoot_open mt-7 bg-red-300 hover:bg-red-500 hover:text-white font-medium text-xl px-4 py-2 border border-black">Book A PhotoShoot</button>
             </div>
 
             <img class="photoShoot -ml-40 w-3/5" src="https://images.pexels.com/photos/4684193/pexels-photo-4684193.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
@@ -153,10 +202,62 @@
     </div>
 
 
+
+
+<!-- POP UP FOR PHOTOSHOOT SESSION -->
+<div id="bookShoot" class="bg-white rounded md:w-1/2 w-11/12 mx-auto shadow">
+      
+    <form class="p-10 flex flex-col gap-2 w-full font-mono">
+      <label for="name">Name</label>
+      <input class="border px-2 py-1 text-base" type="text" value="Name"><br>
+      
+      <label for="phoneNumber">Phone Number</label>
+      <input class="border px-2 py-1 text-base" type="phoneNumber" value="Phone Number"><br>
+
+      <label for="shootType">What kind of shoot do you want?</label>
+      <select class="border px-2 py-1 text-base" name="shootType" id="">
+        <option value="outdoor">Outdoor</option>
+        <option value="indoor">Indoor</option>
+        <option value="studio">Studio</option>
+        <option value="videography">Videography</option>
+        <option value="movie">Movie</option>
+      </select><br>
+    
+      <label for="shootDay">What day would you loveyour shoot</label>
+      <select class="border px-2 py-1 text-base" name="shootDay" id="">
+        <option value="monday">Monday</option>
+        <option value="tuesday">Tuesday</option>
+        <option value="wednesday">Wednesday</option>
+        <option value="thursday">Thursday</option>
+        <option value="friday">Friday</option>
+        <option value="saturday">Saturday</option>
+        <option value="sunday">Sunday</option>
+      </select>
+    </form>
+
+    <div class="flex items-center justify-center gap-5">
+      <input type="button" class="bookShoot_close cursor-pointer text-white text-sm rounded-full px-5 py-3 float-right mr-10 my-7" style="background-color: #FF7D69;" value="View Price list">
+      <input type="button" class="bookShoot_close cursor-pointer text-white text-sm rounded-full px-5 py-3 float-right mr-10 my-7" style="background-color: #FF7D69;" value="Proceed to Payment">
+    </div>
+
+    </div>
+
+
+
+
+
+<!-- *************************************************************************************** -->
+
+
+
+
+
+
+
     <div class="mx-24 mt-60" style="font-family: roos st regis;">
 
-        <P class="font-serif my-10 text-2xl">OUR GALLERY</P>
-        <h1 class="font-serif px-20 text-9xl border-b border-red-200 border-4">Inspiring and<br/>Entertaining</h1>
+        <P class="font-serif my-10"><a class="text-2xl" href="gallery.html">OUR GALLERY</a></P>
+        <h1 class="font-serif px-20 text-8xl border-b border-red-200 border-4">Inspiring and<br/>Entertaining</h1>
 
         <div class="my-14 flex items-center">
 
@@ -178,7 +279,7 @@
 
             <div class="bg-red-200 shadow p-20 flex flex-col items-center justify-center">
                 <P class="text-2xl font-mono text-center">We are aimed at giving you a Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus aperiam ad ea a explicabo deleniti!</P>
-                <button class="mt-7 bg-red-300 hover:bg-red-500 hover:text-white font-medium text-xl px-4 py-2 border border-black">Explore</button>
+                <button class="mt-7 bg-red-300 hover:bg-red-500 hover:text-white font-medium text-xl px-4 py-2 border border-black"><a href="gallery.html">Explore</a></button>
             </div>
 
         </div>
@@ -190,7 +291,7 @@
     <div class="mx-24 mt-60" style="font-family: roos st regis;">
 
         <P class="font-serif my-10 text-2xl">UPDATES</P>
-        <h1 class="font-serif px-20 text-9xl border-b border-red-200 border-4">Blog and<br/>Trends</h1>
+        <h1 class="font-serif px-20 text-8xl border-b border-red-200 border-4">Blog and<br/>Trends</h1>
 
 
         <div class="w-1/3 my-10 text-center p-5 flex flex-col items-center justify-center">
@@ -217,7 +318,7 @@
     <div class="mx-24 mt-60" style="font-family: roos st regis;">
 
         <P class="my-10 text-2xl">ABOUT US</P>
-        <h1 class="px-20 text-9xl border-b border-red-200 border-4">Who Are<br/>We???</h1>
+        <h1 class="px-20 text-8xl border-b border-red-200 border-4">Who Are<br/>We???</h1>
 
         <div class="my-14 flex">
 
@@ -225,7 +326,7 @@
 
             <div class="w-1/2 bg-red-200 shadow p-20 flex flex-col items-center justify-center">
                 <P class="text-2xl font-mono text-center">We are not just about your looks but we ensure that the looks is reflected in every shot you take Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus aperiam ad ea a explicabo deleniti!</P>
-                <button class="mt-7 bg-red-300 hover:bg-red-500 hover:text-white font-medium text-xl px-4 py-2 border border-black">About Us</button>
+                <button class="mt-7 bg-red-300 hover:bg-red-500 hover:text-white font-medium text-xl px-4 py-2 border border-black"><a href="about.html">About Us</a></button>
             </div>
         </div>
 
@@ -239,7 +340,7 @@
     <div class="mx-24 mt-60" style="font-family: roos st regis;">
 
         <P class="my-10 text-2xl">CUSTOMERS REVIEW</P>
-        <h1 class="px-20 text-9xl border-b border-red-200 border-4">Satisfaction and <br/>Beauty</h1>
+        <h1 class="px-20 text-8xl border-b border-red-200 border-4">Satisfaction and <br/>Beauty</h1>
 
         <div class="flex items-start gap-5 p-10 items-center lg:w-8/12 w-10/12 h-80 mx-auto md:mt-20 my-10 bg-red-200 bg-opacity-40 shadow">
 
@@ -369,6 +470,12 @@
 
 
 
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+<!-- Include jQuery Popup Overlay -->
+<script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js">
+</script>
 
 
 
@@ -384,6 +491,34 @@
         function closeNav() {
           document.getElementById("mySidenav").style.width = "0";
         }
+
+
+
+        // POP UP**************************************//
+
+        $(document).ready(function() {
+
+        // Initialize the plugin
+        $('#bookShoot').popup();
+
+        // Set default `pagecontainer` for all popups (optional, but recommended for screen readers and iOS*)
+        $.fn.popup.defaults.pagecontainer = '#page';
+
+        });
+
+
+        // POP UP**************************************//
+
+        $(document).ready(function() {
+
+        // Initialize the plugin
+        $('#bookMakeup').popup();
+
+        // Set default `pagecontainer` for all popups (optional, but recommended for screen readers and iOS*)
+        $.fn.popup.defaults.pagecontainer = '#page';
+
+        });
+
     </script>
 
 

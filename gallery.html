@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d2e0cde1e0.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="//db.onlinewebfonts.com/c/d51960ec2325752ed629b83e3f40c4c4?family=Roos+St+Regis+Text" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Gallery</title>
@@ -40,18 +41,18 @@
                     <a href="javascript:void(0)" class="closebtn absolute top-4 right-6 ml-12" onclick="closeNav()">
                         <i class="fas fa-times text-2xl"></i>
                     </a>
-                    <a class="px-4 py-2" href="">My Account</a>
-                    <a class="px-4 py-2" href="">Cart</a>
-                    <a class="px-4 py-2" href="">MakeUps</a>
-                    <a class="px-4 py-2" href="">MakeOver Session</a>
-                    <a class="px-4 py-2" href="">Body</a>
-                    <a class="px-4 py-2" href="">Skin Care</a>
-                    <a class="px-4 py-2" href="">PhotoShoot</a>
-                    <a class="px-4 py-2" href="">Hairs</a>
-                    <a class="px-4 py-2" href="">Perfume</a>
-                    <a class="px-4 py-2" href="">Others</a>
-                    <a class="px-4 py-2" href="">Gallery</a>
-                    <a class="px-4 py-2" href="">Our Blog</a>
+                    <a class="px-4 py-2" href="account.html">My Account</a>
+                    <a class="px-4 py-2" href="products.html">Cart</a>
+                    <a class="px-4 py-2" href="products.html">MakeUps</a>
+                    <a class="px-4 py-2" href="gallery.html">MakeOver Session</a>
+                    <a class="px-4 py-2" href="products.html">Body</a>
+                    <a class="px-4 py-2" href="products.html">Skin Care</a>
+                    <a class="px-4 py-2" href="gallery.html">PhotoShoot</a>
+                    <a class="px-4 py-2" href="products.html">Hairs</a>
+                    <a class="px-4 py-2" href="products.html">Perfume</a>
+                    <a class="px-4 py-2" href="products.html">Others</a>
+                    <a class="px-4 py-2" href="gallery.html">Gallery</a>
+                    <a class="px-4 py-2" href="blog.html">Our Blog</a>
                     <a class="px-4 py-2" href="login.html">Login</a>
                 </div>
     
@@ -72,7 +73,7 @@
         <h1 class="md:px-20 px-2 lg:text-7xl text-5xl border-b border-red-200 border-4" style="font-family: roos st regis;">Satisfaction and <br/>Beauty</h1>
 
 
-        <div id="mySelectorContainer" class="font-mono">
+        <div id="mySelectorContainer" class="font-sans">
             <button class="selector active px-5 py-2 bg-red-500 text-white border text-base" data-filter="all"> Show all</button>
             <button class="selector px-5 py-2 bg-red-200 hover:bg-red-500 hover:text-white border text-base" data-filter="photosessions"> Photo sessions </button>
             <button class="selector px-5 py-2 bg-red-200 hover:bg-red-500 hover:text-white border text-base" data-filter="makeovers"> Makeovers</button>
@@ -309,7 +310,7 @@
     </div>
   
 
-    <div class="mx-24 font-mono text-center">
+    <div class="mx-24 font-sans text-center">
       <P class="text-base">We are aimed at giving you a Lorem ipsum dolor, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, hic! sit amet consectetur adipisicing elit. Minus aperiam ad ea a explicabo deleniti!</P>
       <div class="flex items-center justify-center gap-10">
         <button class="bookShoot_open mt-7 bg-red-300 hover:bg-red-500 hover:text-white font-medium text-xl px-4 py-2 border border-black"><a href="">Book a PhotoShoot</a></button>
@@ -320,7 +321,7 @@
 <!-- POP UP FOR PHOTOSHOOT SESSION -->
     <div id="bookShoot" class="bg-white rounded md:w-1/2 w-11/12 mx-auto shadow">
       
-      <form class="p-10 flex flex-col gap-2 w-full font-mono">
+      <form class="p-10 flex flex-col gap-2 w-full font-sans">
         <label for="name">Name</label>
         <input class="border px-2 py-1 text-base" type="text" value="Name"><br>
         
@@ -360,7 +361,7 @@
 <!-- POP UP FOR MAKEOVERS SESSION -->
     <div id="bookMakeup" class="bg-white rounded md:w-1/2 w-11/12 mx-auto shadow">
       
-      <form class="p-10 flex flex-col gap-2 w-full font-mono">
+      <form class="p-10 flex flex-col gap-2 w-full font-sans">
         <label for="name">Name</label>
         <input class="border px-2 py-1 text-base" type="text" value="Name"><br>
         
@@ -375,7 +376,7 @@
           <option value="studio">Studio</option>
         </select><br>
       
-        <label for="shootDay">What day would you loveyour shoot</label>
+        <label for="shootDay">What day would you love your shoot</label>
         <select class="border px-2 py-1 text-base" name="shootDay" id="">
           <option value="monday">Monday</option>
           <option value="tuesday">Tuesday</option>
@@ -402,7 +403,7 @@
       <div class=" flex lg:flex-row flex-col lg:items-center items-start justify-between">
           <h1 class="lg:w-5/12 w-full lg:text-3xl md:text-2xl sm:text-xl text-base lg:leading-10 font-bold" style="font-family: roos st regis;">Sign Up Now For Our Discount Products</h1>
 
-          <form class="lg:w-7/12 w-9/12 lg:ml-20 ml-0 flex gap-2 font-mono" action="">
+          <form class="lg:w-7/12 w-9/12 lg:ml-20 ml-0 flex gap-2 font-sans" action="">
               <input class="border-2 border-gray-500 rounded focus:outline-none w-full pr-2 lg:py-2 py-1" type="mail" placeholder="mailto@youmail.com" style="background-color: rgb(235, 219, 214);">
               <button class="butt cursor-pointer focus:outline-none"><a href="" class=" rounded px-7 lg:py-3 py-2 bg-red-300 text-white ">Subscribe</a></button>
           </form>
@@ -417,7 +418,7 @@
 <div class="footer w-full lg:my-20 my-7 lg:px-24 px-5 text-gray-500">
 
   <div class="flex lg:flex-row flex-col items-start justify-between">
-      <div class="footerlinks lg:text-sm text-xs font-mono">
+      <div class="footerlinks lg:text-sm text-xs font-sans">
           <p class="mb-3 font-semibold">COMPANY</p>
           <p class="mb-3"><a class="cursor-pointer" href="index.html" >Home</a></p>
           <p class="mb-3"><a class="cursor-pointer" href="about.html" >About</a></p>
@@ -548,5 +549,19 @@
 
 
     </script>
+
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init({
+                offset:400,
+                duration:1500
+            });
+
+        </script>
 </body>
 </html>
